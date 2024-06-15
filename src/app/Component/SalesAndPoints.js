@@ -33,6 +33,7 @@ function SalesAndPoints() {
                     width={500}
                     height={500}
                     alt="Total Points"
+                    priority={true}
                 />
             ) : (
                 <Image
@@ -40,6 +41,7 @@ function SalesAndPoints() {
                     width={500}
                     height={500}
                     alt="Sales Chart"
+                    priority={true}
                 />
             )}
         </>

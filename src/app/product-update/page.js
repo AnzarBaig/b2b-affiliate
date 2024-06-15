@@ -25,6 +25,7 @@ function page() {
                 height={500}
                 alt="Total Points"
                 className="mb-32"
+                priority={true}
             />
 
             <BestSelling />
