@@ -5,7 +5,7 @@ function page() {
     return (
         <>
             <div className="flex mb-8">
-                <Link href="/">
+                <Link href="/score-cards">
                     <Image
                         src="/back.png" // Replace with actual path to the points image
                         width={30}

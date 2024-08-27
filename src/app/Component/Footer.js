@@ -6,7 +6,7 @@ function Footer() {
     const pathname = usePathname();
 
     return (
-        <footer className="bottom-0 w-full shadow-lg rounded-t-[40px] ring-1 ring-white">
+        <footer className="bottom-0 w-full shadow-lg rounded-t-[40px] ring-1 ring-white sticky">
             <div className="flex flex-row md:flex-row justify-around py-4 mt-2 rounded-t-[40px] bg-indigo-100">
                 <div className="text-center flex-1 md:mb-0">
                     <Link className={`flex justify-center items-center w-12 h-12 mx-auto rounded-full ${pathname === '/' ? 'bg-headsupPurple text-white fill-current' : 'bg-indigo-100 ring-2 ring-headsupPurple text-headsupPurple fill-current '}`} href="/">
@@ -19,7 +19,7 @@ function Footer() {
                 </div>
 
                 <div className="text-center flex-1 md:mb-0">
-                    <Link className={`flex justify-center items-center w-12 h-12 mx-auto rounded-full ${pathname === '/score-cards' ? 'bg-headsupPurple text-white' : 'bg-indigo-100 ring-2 ring-headsupPurple'}`} href="/score-cards">
+                    <Link className={`flex justify-center items-center w-12 h-12 mx-auto rounded-full ${pathname === '/score' ? 'bg-headsupPurple text-white' : 'bg-indigo-100 ring-2 ring-headsupPurple'}`} href="/score-cards">
                         <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" clipRule="evenodd" d="M15 17C15 15.3431 16.3431 14 18 14H26C27.6569 14 29 15.3431 29 17V18.2036L26.8016 20.402C26.6192 20.158 26.3281 20 26 20H18C17.4477 20 17 20.4477 17 21C17 21.5523 17.4477 22 18 22H25.2036L23.1863 24.0173C23.1259 24.0059 23.0637 24 23 24H18C17.4477 24 17 24.4477 17 25C17 25.5523 17.4477 26 18 26H21.9996L21.7738 26.9517C21.4788 28.1952 22.3971 29.3313 23.5793 29.4106C23.7744 29.4238 23.9766 29.4081 24.1818 29.3594L25.6256 29.0169C25.9862 28.9313 26.316 28.7472 26.5781 28.4851L29 26.0632V27C29 28.6569 27.6569 30 26 30H18C16.3431 30 15 28.6569 15 27V17ZM31 24.0629V27C31 29.7614 28.7614 32 26 32H18C15.2386 32 13 29.7614 13 27V17C13 14.2386 15.2386 12 18 12H26C28.5773 12 30.6991 13.95 30.9706 16.455C31.693 16.162 32.5519 16.3084 33.1377 16.8943L34.239 17.9955C35.02 18.7766 35.02 20.0429 34.239 20.8239L31 24.0629ZM23.7201 27.4134L25.1636 27.0709L32.8247 19.4097L31.7235 18.3085L30.7225 19.3095C30.7174 19.3148 30.7123 19.3201 30.7071 19.3252L24.0627 25.9697L23.7201 27.4134ZM17 17C17 16.4477 17.4477 16 18 16H26C26.5523 16 27 16.4477 27 17C27 17.5523 26.5523 18 26 18H18C17.4477 18 17 17.5523 17 17Z" fill="#614AD3" />
                         </svg>

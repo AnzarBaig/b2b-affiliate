@@ -13,17 +13,17 @@ function SalesAndPoints() {
         <>
             <div className="flex justify-between p-4 rounded-lg">
                 <div
-                    className={`flex flex-col items-center p-4 pb-2 rounded-3xl shadow-md border-b-2 border-white cursor-pointer ${showPoints ? 'bg-white/30' : 'bg-white/60'}`}
+                    className={`flex flex-col items-center p-2 pb-2 rounded-3xl shadow-md border-b-2 border-white cursor-pointer ${showPoints ? 'bg-white/30' : 'bg-white/60'}`}
                     onClick={() => setShowPoints(false)}
                 >
-                    <span className="text-headsupPurple font-semibold">TOTAL SALES</span>
+                    <span className="text-headsupPurple font-semibold py-2">TOTAL SALES</span>
                     <span className="text-xl m-1 font-semibold">₹ 56,61,993</span>
                 </div>
                 <div
-                    className={`flex flex-col items-center p-4 pb-2 rounded-3xl shadow-md border-b-2 border-white cursor-pointer ${showPoints ? 'bg-white/60' : 'bg-white/30'}`}
+                    className={`flex flex-col items-center p-2 pb-2 rounded-3xl shadow-md border-b-2 border-white cursor-pointer ${showPoints ? 'bg-white/60' : 'bg-white/30'}`}
                     onClick={() => setShowPoints(true)}
                 >
-                    <span className="text-headsupPurple font-semibold">TOTAL POINTS</span>
+                    <span className="text-headsupPurple font-semibold py-2">TOTAL POINTS</span>
                     <span className="text-xl m-1 font-semibold">88468</span>
                 </div>
             </div>
