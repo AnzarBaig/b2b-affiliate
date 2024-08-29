@@ -39,8 +39,8 @@ const Catalogue = () => {
                 <tbody>
                     {catalogueData.map((item, i) => (
                         <tr key={item.id} >
-                            <td style={{ backgroundColor: item.background || 'white' }} className={`px-1 py-3 whitespace-nowrap text-sm font-medium text-gray-900 ${catalogueData?.length - 1 === i ? 'rounded-bl-2xl' : ''}`}>{item.id}</td>
-                            <td style={{ backgroundColor: item.background || 'white' }} className="px-1 py-3 whitespace-nowrap text-sm text-gray-900">{item.category}</td>
+                            <td style={{ backgroundColor: item.background || 'white' }} className={`px-1 py-3 whitespace-nowrap text-xs font-medium text-gray-900 ${catalogueData?.length - 1 === i ? 'rounded-bl-2xl' : ''}`}>{item.id}</td>
+                            <td style={{ backgroundColor: item.background || 'white' }} className="px-1 py-3 whitespace-nowrap text-xs text-gray-900">{item.category}</td>
                             <td style={{ backgroundColor: item.background || 'white' }} className={`px-1 py-3 whitespace-nowrap font-bold text-base text-headsupPurple flex items-center ${catalogueData?.length - 1 === i ? 'rounded-br-2xl' : ''}`}>
                                 {item.payoutPercent}
                                 <svg
