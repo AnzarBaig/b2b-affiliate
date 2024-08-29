@@ -83,7 +83,7 @@ export default function Form() {
                         {...register('specification')}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[6.15rem] top-2">*</span>
+                    <span className="text-red-500 absolute right-[5.90rem] top-2">*</span>
                 </div>
                 <div className="relative">
                     <input
