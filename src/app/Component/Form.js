@@ -14,17 +14,17 @@ export default function Form() {
                 <div className="relative">
                     <input
                         type="text"
-                        placeholder="Name"
+                        placeholder="Name *"
                         {...register('name', { required: 'Name is required' })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[11.25rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[11.25rem] top-2">*</span> */}
                     {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
                 </div>
                 <div className="relative">
                     <input
                         type="tel"
-                        placeholder="Contact Number"
+                        placeholder="Contact Number *"
                         {...register('contact', {
                             required: 'Contact number is required',
                             maxLength: {
@@ -38,17 +38,17 @@ export default function Form() {
                         })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[6.40rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[6.40rem] top-2">*</span> */}
                     {errors.contact && <p className="text-red-500 text-sm">{errors.contact.message}</p>}
                 </div>
                 <div className="relative">
                     <input
                         type="email"
-                        placeholder="Email Id"
+                        placeholder="Email Id *"
                         {...register('email', { required: 'Email is required' })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[10.25rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[10.25rem] top-2">*</span> */}
                     {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
                 </div>
                 <div className="relative">
@@ -56,12 +56,12 @@ export default function Form() {
                         {...register('category', { required: 'Category is required' })}
                         className="border p-2 w-full rounded-lg"
                     >
-                        <option value="">Select Category</option>
+                        <option value="select category">Select Category *</option>
                         <option value="electronics">Electronics</option>
                         <option value="clothing">Clothing</option>
                         <option value="furniture">Furniture</option>
                     </select>
-                    <span className="text-red-500 absolute right-[6.25rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[6.25rem] top-2">*</span> */}
                     {errors.category && <p className="text-red-500 text-sm">{errors.category.message}</p>}
                 </div>
                 <div className="relative">
@@ -69,49 +69,49 @@ export default function Form() {
                         {...register('product', { required: 'Product is required' })}
                         className="border p-2 w-full rounded-lg"
                     >
-                        <option value="">Select Product</option>
+                        <option value="select product">Select Product *</option>
                         <option value="phone">Phone</option>
                         <option value="shirt">Shirt</option>
                         <option value="table">Table</option>
                     </select>
-                    <span className="text-red-500 absolute right-[6.85rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[6.85rem] top-2">*</span> */}
                     {errors.product && <p className="text-red-500 text-sm">{errors.product.message}</p>}
                 </div>
                 <div className="relative">
                     <textarea
-                        placeholder="Any Specification"
+                        placeholder="Any Specification *"
                         {...register('specification')}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[5.90rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[6.1rem] top-2">*</span> */}
                 </div>
                 <div className="relative">
                     <input
-                        placeholder="Quantity"
+                        placeholder="Quantity *"
                         type="number"
                         {...register('quantity', { required: 'Quantity is required' })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[10rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[10rem] top-2">*</span> */}
                     {errors.quantity && <p className="text-red-500 text-sm">{errors.quantity.message}</p>}
                 </div>
                 <div className="relative">
                     <textarea
-                        placeholder="Address of Delivery Location"
+                        placeholder="Address of Delivery Location *"
                         {...register('address', { required: 'Address is required' })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[.5rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[.5rem] top-2">*</span> */}
                     {errors.address && <p className="text-red-500 text-sm">{errors.address.message}</p>}
                 </div>
                 <div className="relative">
                     <input
-                        placeholder="Pincode of Delivery Location"
+                        placeholder="Pincode of Delivery Location *"
                         type="text"
                         {...register('pincode', { required: 'Pincode is required' })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[.5rem] top-2">*</span>
+                    {/* <span className="text-red-500 absolute right-[.5] top-2">*</span> */}
                     {errors.pincode && <p className="text-red-500 text-sm">{errors.pincode.message}</p>}
                 </div>
                 <div className="flex justify-center mt-4">
