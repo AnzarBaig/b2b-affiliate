@@ -101,7 +101,7 @@ export default function Form() {
                         {...register('address', { required: 'Address is required' })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[1rem] top-2">*</span>
+                    <span className="text-red-500 absolute right-[.5rem] top-2">*</span>
                     {errors.address && <p className="text-red-500 text-sm">{errors.address.message}</p>}
                 </div>
                 <div className="relative">
@@ -111,7 +111,7 @@ export default function Form() {
                         {...register('pincode', { required: 'Pincode is required' })}
                         className="border p-2 w-full rounded-lg"
                     />
-                    <span className="text-red-500 absolute right-[1rem] top-2">*</span>
+                    <span className="text-red-500 absolute right-[.5rem] top-2">*</span>
                     {errors.pincode && <p className="text-red-500 text-sm">{errors.pincode.message}</p>}
                 </div>
                 <div className="flex justify-center mt-4">
